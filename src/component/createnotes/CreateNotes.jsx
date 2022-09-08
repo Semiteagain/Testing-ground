@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./createNotes.css";
 
-const CreateNotes = () => {
+const CreateNotes = (props) => {
   const [item, setItem] = useState({
     title: "",
     content: "",
@@ -19,6 +19,7 @@ const CreateNotes = () => {
   }
 
   const handleAdd = (event) =>{
+  props.onAdd(item);
    event.preventDefault();
   }
 
