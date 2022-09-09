@@ -15,6 +15,16 @@ const App = () => {
       ]
      })
   }
+
+
+  const deleteNote = (id) => {
+    setNote(prevNotes =>{
+      return prevNotes.filter((newNote, index)=>{
+        return index !== id
+      })
+    })
+
+  }
   return (
     <div>
       <Nav />
@@ -25,7 +35,8 @@ const App = () => {
         key={index}
         id={index}
         title={items.title}
-        content={items.content} />
+        content={items.content}
+        onDelete={deleteNote} />
       })}
     
  
