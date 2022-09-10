@@ -24,7 +24,8 @@ const CreateNotes = (props) => {
   }
 
   return (
-    <form>
+
+    <form className="container form__container">
       <input
         onChange={handleChange}
         type="text"
