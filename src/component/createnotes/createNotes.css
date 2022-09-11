@@ -38,6 +38,6 @@
    .form__container {
     height: 7rem;
     background: var(--color-white);
-    width: ;
+    width: 35%;
     display: grid;
    }
